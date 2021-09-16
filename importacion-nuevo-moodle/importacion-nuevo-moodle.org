@@ -1,6 +1,53 @@
+* Por importar:
+  
+icons/icons8-1-filled-24.png
+icons/icons8-2-filled-24.png
+icons/icons8-3-filled-24.png
+icons/icons8-4-filled-24.png
+icons/icons8-5-filled-24.png
+icons/icons8-6-filled-24.png
+icons/icons8-7-filled-24.png
+icons/icons8-8-filled-24.png
+icons/icons8-9-filled-24.png
+icons/icons8-alarm-filled-24.png 🔔
+icons/icons8-align-left-24.png
+icons/icons8-align-left-filled-24.png
+icons/icons8-align-left-filled-24.png
+icons/icons8-align-left-filled-24.png
+icons/icons8-align-left-filled-24.png
+icons/icons8-align-left-filled-24.png
+icons/icons8-align-left-filled-24.png
+icons/icons8-align-left-filled-24.png
+icons/icons8-align-left-filled-24.png
+icons/icons8-align-left-filled-24.png
+icons/icons8-calendar-7-16.png
+icons/icons8-calendar-7-24.png 📆
+icons/icons8-calendar-7-24.png
+icons/icons8-calendar-7-24.png
+icons/icons8-calendar-7-24.png
+icons/icons8-calendar-7-24.png
+icons/icons8-calendar-7-24.png
+icons/icons8-calendar-7-24.png
+icons/icons8-calendar-7-24.png
+icons/icons8-calendar-7-24.png
+icons/icons8-compass-filled-24.png 🧭
+icons/icons8-conference-filled-24.png 🧑‍🏫
+icons/icons8-dictionary-filled-24.png 📗
+icons/icons8-discussion-forum-filled-24.png 🗨
+icons/icons8-evaluation-filled-24.png
+icons/icons8-help-filled-24.png ❓
+icons/icons8-questionnaire-filled-24.png
+icons/icons8-swiss-army-knife-filled-24.png 🛠
+icons/icons8-task-filled-24.png
+
+
 * Archivos no importados:
 
-      /67631/course/section/9434/icons8-align-left-filled-24.png (icons/icons8-align-left-filled-24.png)
+** Ejemplo de URL válida
+   https://fpdistancia.educa.madrid.org/pluginfile.php/108425/course/section/6060/icons8-calendar-7-24.png
+
+** No importados
+    /67631/course/section/9434/icons8-align-left-filled-24.png (icons/icons8-align-left-filled-24.png)
     /67631/course/section/9434/icons8-align-left-24.png (icons/icons8-align-left-24.png)
     /67631/course/section/9436/icons8-calendar-7-24.png (icons/icons8-calendar-7-24.png)
     /67631/course/section/9436/icons8-align-left-filled-24.png (icons/icons8-align-left-filled-24.png)

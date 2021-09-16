@@ -1,0 +1,14 @@
+
+En linux, se necesita el openjdk 8:
+
+#+begin_src bash
+sudo apt install openjdk-8-jdk
+sudo update-alternatives --config java
+#end_src
+
+
+
+Para instalar el APK generado
+#+begin_src bash
+sudo adb install app/build/outputs/apk/debug/app-debug.apk
+#+end_src
