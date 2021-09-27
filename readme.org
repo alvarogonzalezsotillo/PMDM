@@ -1,10 +1,20 @@
 
+* Versión de Gradle
+
+El plugin de gradle para android usado es el 3.0.0 (=build.gradle= del raíz del proyecto)
+
+Si se actualiza, pide una versión superior del API de Android.
+  
+* jdk 8 para compilar
+
+con la versión gradle de los ejemplos, se necesita jdk8
+  
 En linux, se necesita el openjdk 8:
 
 #+begin_src bash
 sudo apt install openjdk-8-jdk
 sudo update-alternatives --config java
-#end_src
+#+end_src
 
 
 
@@ -12,3 +22,14 @@ Para instalar el APK generado
 #+begin_src bash
 sudo adb install app/build/outputs/apk/debug/app-debug.apk
 #+end_src
+
+
+El openjdk8 se puede configurar en gradle.properties
+
+#+begin_src bash
+org.gradle.java.home=/usr/lib/jvm/java-8-openjdk-amd64
+#+end_src
+
+En android-studio, usar =ctrl-alt-shift-s=
+
+
