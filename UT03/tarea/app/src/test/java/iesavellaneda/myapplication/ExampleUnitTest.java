@@ -1,4 +1,4 @@
-package manoloavellaneda.myapplication;
+package iesavellaneda.myapplication;
 
 import org.junit.Test;
 

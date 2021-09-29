@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">My Application</string>
+    <string name="app_name">Tarea UT03</string>
+    <string name="ingrese_segundo_valor">Ingrese segundo valor</string>
 </resources>

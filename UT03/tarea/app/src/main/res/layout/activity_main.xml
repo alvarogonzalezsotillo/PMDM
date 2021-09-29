@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="manoloavellaneda.myapplication.MainActivity">
+    tools:context="iesavellaneda.myapplication.MainActivity">
 
     <EditText
         android:id="@+id/et1"
@@ -25,16 +25,17 @@
         android:id="@+id/et2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="Ingrese segundo valor:"
-        android:inputType="number"
-        tools:layout_constraintTop_creator="1"
-        tools:layout_constraintRight_creator="1"
-        app:layout_constraintRight_toRightOf="@+id/et1"
         android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="@string/ingrese_segundo_valor"
+        android:inputType="number"
+        android:singleLine="true"
+        app:layout_constraintLeft_toLeftOf="@+id/et1"
+        app:layout_constraintRight_toRightOf="@+id/et1"
         app:layout_constraintTop_toBottomOf="@+id/et1"
         tools:layout_constraintLeft_creator="1"
-        app:layout_constraintLeft_toLeftOf="@+id/et1" />
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1" />
 
     <CheckBox
         android:id="@+id/chkb1"
