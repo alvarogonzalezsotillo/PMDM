@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">0403-en</string>
+    <string name="tvNombre">Name:</string>
+    <string name="tvPrimerApellido">Last Name 1:</string>
+    <string name="tvSegundoApellido">Last Name 2:</string>
+    <string name="tvEdad">Age:</string>
+    <string name="btnEnviar">Submit</string>
+</resources>
