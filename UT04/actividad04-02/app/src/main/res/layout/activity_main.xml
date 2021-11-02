@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context="com.example.dell.tarea28layoutscombinados.MainActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3">
+
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TableRow>
+                    <Button
+                        android:text="1"/>
+                    <Button
+                        android:text="2"/>
+                    <Button
+                        android:text="3"/>
+                </TableRow>
+
+                <TableRow>
+                    <Button
+                        android:text="4"/>
+                    <Button
+                        android:text="5"/>
+                    <Button
+                        android:text="6"/>
+                </TableRow>
+
+                <TableRow>
+                    <Button
+                        android:text="7"/>
+                    <Button
+                        android:text="8"/>
+                    <Button
+                        android:text="9"/>
+                </TableRow>
+
+                <TableRow>
+                    <Button
+                        android:text="0"
+                        android:layout_span="3"/>
+
+                </TableRow>
+
+            </TableLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="," />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="=" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="C" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
