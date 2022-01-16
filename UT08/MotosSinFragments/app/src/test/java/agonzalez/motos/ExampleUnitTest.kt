@@ -1,4 +1,4 @@
-package agonzalez.motossinfragments
+package agonzalez.motos
 
 import org.junit.Test
 

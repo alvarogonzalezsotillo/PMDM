@@ -12,7 +12,7 @@
 
     android:orientation="vertical"
 
-    tools:context="agonzalez.motos.DetailView">
+    tools:context="agonzalez.motos.fragments.HarleyFragment">
 
 
 
@@ -34,7 +34,7 @@
 
             android:layout_height="wrap_content"
 
-            android:src="@drawable/ic_launcher_background"/>
+            android:src="@drawable/logo_harley_davidson"/>
 
 
 
@@ -46,7 +46,7 @@
 
             android:layout_height="wrap_content"
 
-            android:text="Marca"
+            android:text="Harley Davidson"
 
             android:textSize="30dp"
 
@@ -57,7 +57,6 @@
     </LinearLayout>
 
 
-
     <TextView
 
         android:id="@+id/tvDescripcion"
@@ -66,7 +65,7 @@
 
         android:layout_height="wrap_content"
 
-        android:text="tvDescripcion"/>
+        android:text="Harley Davidson ya ha cumplido 110 años, algo de lo que muy pocas marcas pueden presumir y el secreto de su longevidad está en la gran personalidad que como marca logran imprimir a todos sus productos, habiendo desarrollado a su alrededor todo un estilo de vida. Son las motos custom y cruiser por excelencia y sus dos cilindros constituyen la esencia en torno a la que se desarrolla un amplia gama donde elegir tu moto de Milwakee. Iconos como la Fat Boy conviven con motos tan arriesgadas como la V-Rod en un ejercicio de unir el diseño clásico con apuesta innovadoras. !Viva el Big Twin!" />
 
 
 
@@ -75,6 +74,8 @@
         android:id="@+id/imgvFoto"
 
         android:layout_width="match_parent"
+
+        android:src="@drawable/imagen_harley"
 
         android:layout_height="wrap_content" />
 

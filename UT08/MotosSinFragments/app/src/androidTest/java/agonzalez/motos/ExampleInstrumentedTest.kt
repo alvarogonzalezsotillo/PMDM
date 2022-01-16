@@ -1,4 +1,4 @@
-package agonzalez.motossinfragments
+package agonzalez.motos
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

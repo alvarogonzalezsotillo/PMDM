@@ -1,15 +1,14 @@
-package agonzalez.motossinfragments
+package agonzalez.motos
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Button
 import androidx.appcompat.widget.AppCompatImageButton
 
-class MainActivity : AppCompatActivity() {
+class ActivitySinFragments : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_sin_fragments)
 
         findViewById<AppCompatImageButton>(R.id.imgb1).setOnClickListener{
             showItem(0);

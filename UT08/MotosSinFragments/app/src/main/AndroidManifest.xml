@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="agonzalez.motossinfragments">
+    package="agonzalez.motos">
 
     <application
         android:allowBackup="true"
@@ -10,11 +10,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MotosSinFragments">
         <activity
-            android:name=".DetailView"
-            android:exported="true"
-            android:label="@string/title_activity_detail_view"
-            android:theme="@style/Theme.MotosSinFragments.NoActionBar" />
-        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
@@ -22,7 +17,23 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
+        <activity
+            android:name=".ActivityTabbed"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".ActivitySwipe"
+            android:exported="true"></activity>
+        <activity
+            android:name=".DetailView"
+            android:exported="true"
+            android:label="@string/title_activity_detail_view"
+            android:theme="@style/Theme.MotosSinFragments.NoActionBar" />
+        <activity
+            android:name=".ActivitySinFragments"
+            android:exported="true" />
     </application>
 
 </manifest>

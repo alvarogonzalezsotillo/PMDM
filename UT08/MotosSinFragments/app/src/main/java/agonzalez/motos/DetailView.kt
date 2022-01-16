@@ -1,4 +1,4 @@
-package agonzalez.motossinfragments
+package agonzalez.motos
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity

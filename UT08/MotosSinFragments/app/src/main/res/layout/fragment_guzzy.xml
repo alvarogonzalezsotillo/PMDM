@@ -12,7 +12,7 @@
 
     android:orientation="vertical"
 
-    tools:context="agonzalez.motos.DetailView">
+    tools:context="agonzalez.motos.fragments.GuzzyFragment">
 
 
 
@@ -34,7 +34,7 @@
 
             android:layout_height="wrap_content"
 
-            android:src="@drawable/ic_launcher_background"/>
+            android:src="@drawable/logo_moto_guzzi"/>
 
 
 
@@ -46,7 +46,7 @@
 
             android:layout_height="wrap_content"
 
-            android:text="Marca"
+            android:text="Guzzy"
 
             android:textSize="30dp"
 
@@ -57,7 +57,6 @@
     </LinearLayout>
 
 
-
     <TextView
 
         android:id="@+id/tvDescripcion"
@@ -66,7 +65,7 @@
 
         android:layout_height="wrap_content"
 
-        android:text="tvDescripcion"/>
+        android:text="Moto Guzzi, marca fundada en 1921 en Mandello di Lario es una de las leyendas italianas de la motocicleta. Sus primeros motores fueron monocilíndricos horizontales tanto en dos como en cuatro tiempos. A finales de los años 60 del Siglo XX presentaron el motor que desde entonces se ha convertido en su seña de identidad, el bicilíndrico longitudinal (por la posición del cigüeñal) de alta cilindrada y con trasmisión secundaria por cardan. Actualmente las versiones rediseñadas por completo de este concepto con enorme personalidad se encargan de ofrecer una gama compuesta por motos turismo, custom, urbanas con un toque retro y deportivas." />
 
 
 
@@ -75,6 +74,8 @@
         android:id="@+id/imgvFoto"
 
         android:layout_width="match_parent"
+
+        android:src="@drawable/imagen_moto_guzzi"
 
         android:layout_height="wrap_content" />
 

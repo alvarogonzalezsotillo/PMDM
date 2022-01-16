@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+
+    tools:context="agonzalez.motos.fragments.BultacoFragment">
+
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+
+        android:orientation="horizontal">
+
+
+
+        <ImageView
+
+            android:id="@+id/imgvLogo"
+
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+
+            android:src="@drawable/logo_bultaco"/>
+
+
+
+        <TextView
+
+            android:id="@+id/tvMarca"
+
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+
+            android:text="Bultaco"
+
+            android:textSize="30dp"
+
+            android:gravity="center"
+
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+
+    <TextView
+
+        android:id="@+id/tvDescripcion"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+
+        android:text='La marca Bultaco es un clásico que renace tras unos muchos años fuera de juego pero sin perder el favor de los aficionados, pues sus monocilíndricas de dos tiempos de los años 60 y 70 cautivaron el corazón de los amantes de las deportivas, tanto de carretera como de campo. La nueva Bultaco Motors es una compañía creada por apasionados ingenieros españoles y directivos internacionales que cuenta con el beneplácito y la colaboración de la familia Bultó (los fundadores originalmente de la marca) planea lanzar una gama completa que empezará a salir a la calle en 2015. Sus primeros modelos dispondrán de motor eléctrico y altísima tecnología, una apuesta de futuro que se apoya además por la innovadora estética de sus motos y la marca "diseñado y hecho en España", que recupera con orgullo una tradición industrial catalana que pretende reverdecer laureles. El equipo de diseño y desarrollo de Bultaco se encuentra en Madrid y la fábrica se realizará en Barcelona, donde dará trabajo a más de 100 empleados directos para producir en torno a 2.000 unidades durante el primer ejercicio completo.' />
+
+
+
+    <ImageView
+
+        android:id="@+id/imgvFoto"
+
+        android:layout_width="match_parent"
+
+        android:src="@drawable/imagen_bultaco"
+
+        android:layout_height="wrap_content" />
+
+
+
+</LinearLayout>
