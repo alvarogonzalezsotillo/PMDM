@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_harley"
+        android:orderInCategory="100"
+        android:title="Harley"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_guzzy"
+        android:orderInCategory="100"
+        android:title="Guzzy"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_bultaco"
+        android:orderInCategory="100"
+        android:title="Bultaco"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/itemOpenDrawer"
+        android:title="Abrir el Drawer"
+        app:showAsAction="never" />
+</menu>

@@ -19,5 +19,8 @@ class MainActivity : AppCompatActivity() {
         findViewById<Button>(R.id.tabsButton).setOnClickListener{
             startActivity( Intent(this, ActivityTabbed::class.java) )
         }
+        findViewById<Button>(R.id.drawerButton).setOnClickListener{
+            startActivity( Intent(this, ActivityNavigationDrawer::class.java) )
+        }
     }
 }

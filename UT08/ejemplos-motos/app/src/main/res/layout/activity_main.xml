@@ -30,5 +30,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Ejemplo con tabs" />
+        <Button
+            android:id="@+id/drawerButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ejemplo con Navigation Drawer" />
     </LinearLayout>
 </LinearLayout>

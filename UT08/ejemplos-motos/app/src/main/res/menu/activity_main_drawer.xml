@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+
+    tools:showIn="navigation_view">
+
+
+
+    <group android:checkableBehavior="single">
+
+        <item
+
+            android:id="@+id/itemBultaco"
+
+            android:icon="@drawable/logo_bultaco"
+
+            android:title="Bultaco" />
+
+        <item
+
+            android:id="@+id/itemHarley"
+
+            android:icon="@drawable/logo_harley_davidson"
+
+            android:title="Harley Davidson" />
+        <item
+
+            android:id="@+id/itemMotoGuzzi"
+
+            android:icon="@drawable/logo_moto_guzzi"
+
+            android:title="Moto Guzzi" />
+
+
+
+    </group>
+
+
+</menu>
