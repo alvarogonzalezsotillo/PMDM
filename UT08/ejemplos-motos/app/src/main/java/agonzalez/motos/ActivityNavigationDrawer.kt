@@ -50,6 +50,9 @@ class ActivityNavigationDrawer : AppCompatActivity() , NavigationView.OnNavigati
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
         navView.setNavigationItemSelectedListener(this)
+
+        // https://stackoverflow.com/questions/58400886/the-icons-in-navigationview-are-not-displayed
+        navView.itemIconTintList = null;
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
