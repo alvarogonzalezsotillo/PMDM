@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">MotosSinFragments</string>
+
+    <string-array name="nombre">
+
+        <item>Bultaco</item>
+
+        <item>Harley Davidson</item>
+
+        <item>Moto Guzzi</item>
+
+    </string-array>
+
+
+    <!-- Descripciones y logos de marca procedentes de www.motofichas.com -->
+
+    <string-array name="descripcion">
+
+        <item>La marca Bultaco es un clásico que renace tras unos muchos años fuera de juego pero sin perder el favor de los aficionados, pues sus monocilíndricas de dos tiempos de los años 60 y 70 cautivaron el corazón de los amantes de las deportivas, tanto de carretera como de campo. La nueva Bultaco Motors es una compañía creada por apasionados ingenieros españoles y directivos internacionales que cuenta con el beneplácito y la colaboración de la familia Bultó (los fundadores originalmente de la marca) planea lanzar una gama completa que empezará a salir a la calle en 2015. Sus primeros modelos dispondrán de motor eléctrico y altísima tecnología, una apuesta de futuro que se apoya además por la innovadora estética de sus motos y la marca "diseñado y hecho en España", que recupera con orgullo una tradición industrial catalana que pretende reverdecer laureles. El equipo de diseño y desarrollo de Bultaco se encuentra en Madrid y la fábrica se realizará en Barcelona, donde dará trabajo a más de 100 empleados directos para producir en torno a 2.000 unidades durante el primer ejercicio completo.</item>
+
+        <item>Harley Davidson ya ha cumplido 110 años, algo de lo que muy pocas marcas pueden presumir y el secreto de su longevidad está en la gran personalidad que como marca logran imprimir a todos sus productos, habiendo desarrollado a su alrededor todo un estilo de vida. Son las motos custom y cruiser por excelencia y sus dos cilindros constituyen la esencia en torno a la que se desarrolla un amplia gama donde elegir tu moto de Milwakee. Iconos como la Fat Boy conviven con motos tan arriesgadas como la V-Rod en un ejercicio de unir el diseño clásico con apuesta innovadoras. !Viva el Big Twin!</item>
+
+        <item>Moto Guzzi, marca fundada en 1921 en Mandello di Lario es una de las leyendas italianas de la motocicleta. Sus primeros motores fueron monocilíndricos horizontales tanto en dos como en cuatro tiempos. A finales de los años 60 del Siglo XX presentaron el motor que desde entonces se ha convertido en su seña de identidad, el bicilíndrico longitudinal (por la posición del cigüeñal) de alta cilindrada y con trasmisión secundaria por cardan. Actualmente las versiones rediseñadas por completo de este concepto con enorme personalidad se encargan de ofrecer una gama compuesta por motos turismo, custom, urbanas con un toque retro y deportivas.</item>
+
+    </string-array>
+    <string name="title_activity_detail_view">DetailView</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+</resources>
