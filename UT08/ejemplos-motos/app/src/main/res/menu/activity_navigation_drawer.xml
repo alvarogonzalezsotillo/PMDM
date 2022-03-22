@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
         android:id="@+id/action_harley"
+        android:icon="@drawable/logo_harley_davidson"
         android:orderInCategory="100"
         android:title="Harley"
         app:showAsAction="never" />
