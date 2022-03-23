@@ -74,9 +74,8 @@ public class EjemploConexionRetrofit {
 
     public static class Municipio {
         public String latitud;
-        public String url;
         public String altitud;
-        public String capital;
+        public String nombre;
         public String id;
         public String longitud;
 
@@ -84,18 +83,11 @@ public class EjemploConexionRetrofit {
         public String toString() {
             return "Municipio{" +
                     "latitud='" + latitud + '\'' +
-                    ", url='" + url + '\'' +
                     ", altitud='" + altitud + '\'' +
-                    ", capital='" + capital + '\'' +
+                    ", nombre='" + nombre + '\'' +
                     ", id='" + id + '\'' +
                     ", longitud='" + longitud + '\'' +
                     '}';
         }
     }
-
-    public static class Municipios {
-        public ArrayList<Municipio> municipios;
-    }
-
-
 }
