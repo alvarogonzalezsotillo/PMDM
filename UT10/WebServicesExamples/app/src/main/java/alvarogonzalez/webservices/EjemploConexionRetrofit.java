@@ -27,8 +27,8 @@ public class EjemploConexionRetrofit {
     public static Retrofit getRetrofit() {
         if( _retrofitInstance == null ) {
             _retrofitInstance = new Retrofit.Builder().
-                    baseUrl(ServicioMunicipios.BASE_URL).
                     client(httpClient).
+                    baseUrl("https://opendata.aemet.es/opendata/api/").
                     addConverterFactory(GsonConverterFactory.create()).
                     build();
         }
@@ -52,11 +52,8 @@ public class EjemploConexionRetrofit {
     }
 
     public interface ServicioMunicipios {
-        public static final String BASE_URL = "https://opendata.aemet.es/opendata/api/maestro/";
-
-        @GET("municipios")
+        @GET("https://opendata.aemet.es/opendata/api/maestro/municipios")
         Call<List<Municipio>> listaMunicipios(@Header("api_key") String apiKey);
-
     }
 
     public enum Zona{
