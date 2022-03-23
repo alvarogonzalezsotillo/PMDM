@@ -6,6 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
 
+import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -18,6 +19,8 @@ import retrofit2.http.Path;
 
 public class EjemploConexionRetrofit {
 
+    public static OkHttpClient httpClient = new OkHttpClient();
+
     private static String API_KEY= EjemploConexionVolley.API_KEY;
 
     private static Retrofit _retrofitInstance = null;
@@ -25,6 +28,7 @@ public class EjemploConexionRetrofit {
         if( _retrofitInstance == null ) {
             _retrofitInstance = new Retrofit.Builder().
                     baseUrl(ServicioMunicipios.BASE_URL).
+                    client(httpClient).
                     addConverterFactory(GsonConverterFactory.create()).
                     build();
         }
