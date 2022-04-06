@@ -41,6 +41,8 @@ public class ConexionRetrofitConPathActivity extends AppCompatActivity {
             return null;
         }).thenRun( () -> {
             String url = cf.getNow(null).datos;
+            // NO IMPORTA QUE SE EJECUTE DESDE OTRO THREAD,
+            // EL PROPIO VOLLEY SE ASEGURA DE USAR EL THREAD DE LA INTERFAZ
             cargaImagen(iv,url);
         });
     }

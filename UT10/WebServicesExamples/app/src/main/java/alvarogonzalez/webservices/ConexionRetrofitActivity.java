@@ -3,6 +3,8 @@ package alvarogonzalez.webservices;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Looper;
 import android.text.method.ScrollingMovementMethod;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -71,24 +73,28 @@ public class ConexionRetrofitActivity extends AppCompatActivity {
         ListView lv = findViewById(R.id.municipiosList);
         tv.setMovementMethod(new ScrollingMovementMethod());
 
+        // UN HANDLER ES CAPAZ DE EJECUTAR COSAS EN EL THREAD DE LA INTERFAZ,
+        // AUNQUE SE LLAME DESDE OTRO THREAD
+        Handler handler = new Handler( Looper.getMainLooper() );
+
         findViewById(R.id.getMunicipiosButton).setOnClickListener( (View v) -> {
             Log.d(TAG,"Pidiendo municipios");
             tv.setText( "Pidiendo municipios...");
             CompletableFuture<Municipio[]> cf = EjemploConexionRetrofit.getMunicipios();
+
+            // SE VIGILA SI EL FUTURO ACABA CON ERROR (EXCEPTIONALLY) O CORRECTAMENTE (THENAPPLYASYNC)
             cf.exceptionally( (Throwable t) -> {
                 Log.d(TAG,"Error", t );
-                tv.setText("Error:" + t );
+                handler.post( ()-> tv.setText("Error:" + t ) );
                 return null;
             })
-            .thenRun( () -> {
-
-                Municipio[] ms = cf.getNow(null);
+            .thenApplyAsync( (Municipio[] ms) -> {
                 tv.setText( Arrays.asList(ms).toString() );
-
                 Log.d(TAG,"Consegido:" + Arrays.asList(ms).toString() );
-
                 lv.setAdapter( new MunicipioAdapter(ms) );
-            });
+                return ms;
+            }, handler::post );
+            // SE USA HANDLER::POST COMO EXECUTOR, PARA QUE EL CODIGO SE EJECUTE EN EL THREAD DE LA INTERFAZ
         });
     }
 }

@@ -1,8 +1,5 @@
 package alvarogonzalez.webservices;
 
-import androidx.annotation.NonNull;
-
-import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
 
@@ -19,10 +16,12 @@ import retrofit2.http.Path;
 
 public class EjemploConexionRetrofit {
 
+    // SOLO UTILIZADO DESDE LAS PRUEBAS, PARA IGNORAR LOS CERTIFICADOS SSL
     public static OkHttpClient httpClient = new OkHttpClient();
 
     private static String API_KEY= EjemploConexionVolley.API_KEY;
 
+    // INSTANCIA DE RETROFIT (SINGLETON)
     private static Retrofit _retrofitInstance = null;
     public static Retrofit getRetrofit() {
         if( _retrofitInstance == null ) {
@@ -35,6 +34,7 @@ public class EjemploConexionRetrofit {
         return _retrofitInstance;
     }
 
+    // INSTANCIA DE SERVICIO DE MUNICIPIOS (SINGLETON)
     private static ServicioMunicipios _servicioMunicipiosInstance = null;
     public static ServicioMunicipios getServicioMunicipios() {
         if( _servicioMunicipiosInstance == null ) {
@@ -43,6 +43,7 @@ public class EjemploConexionRetrofit {
         return _servicioMunicipiosInstance;
     }
 
+    // INSTANCIA DE SERVICIO DE RIESGO DE INCENDIOS (SINGLETON)
     private static ServicioRiesgoIncendio _servicioRiesgoIncendioInstance = null;
     public static ServicioRiesgoIncendio getServicioRiesgoIncencio(){
         if( _servicioRiesgoIncendioInstance == null ){
@@ -69,11 +70,11 @@ public class EjemploConexionRetrofit {
 
     public interface ServicioRiesgoIncendio{
         @GET("https://opendata.aemet.es/opendata/api/incendios/mapasriesgo/estimado/area/{id}")
-        Call<RiesgoIncendio> riesgoIndencio(@Header("api_key") String apiKey, @Path("id") Zona zona);
+        Call<RiesgoIncendio> riesgoIncendio(@Header("api_key") String apiKey, @Path("id") Zona zona);
     }
 
     public static CompletableFuture<RiesgoIncendio> getRiesgoIncencio(Zona zona){
-        Call<RiesgoIncendio> riesgoRequest = getServicioRiesgoIncencio().riesgoIndencio(API_KEY,zona);
+        Call<RiesgoIncendio> riesgoRequest = getServicioRiesgoIncencio().riesgoIncendio(API_KEY,zona);
         CompletableFuture<RiesgoIncendio> cf = new CompletableFuture<>();
 
         riesgoRequest.enqueue(new Callback<RiesgoIncendio>() {
@@ -106,7 +107,7 @@ public class EjemploConexionRetrofit {
     }
 
     public static CompletableFuture<Municipio[]> getMunicipios(){
-        Call<List<Municipio>> municipiosRequest = getServicioMunicipios().listaMunicipios(API_KEY );
+        Call<List<Municipio>> municipiosRequest = getServicioMunicipios().listaMunicipios(API_KEY);
 
         CompletableFuture<Municipio[]> cf = new CompletableFuture<>();
 
